@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    padding-top: 5rem;
+    min-height: 50vh;
+}
+
+/* REUSABLE CLASSES */
+.container{
+    padding: 0 2rem;
+}
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar_container{
+    display: flex;
+    align-items: center;
+    padding: .5rem 2rem ;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+}
+
+.navbar_menu{
+    display: flex;
+    gap: 1rem;
+}
+.navbar_menu_item a{
+    color: aliceblue;
+}
+/* INICIO */
+.inicio{
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio_title{
+    line-height: 1.2;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.inicio_descripcion, .inicio_title{
+    text-align: center;
+}
+
+/* SOBRE MI */
+.sobre_mi{
+    display: flex;
+    flex-direction: column; 
+}
+.sobremi_title{
+    line-height: 1.2;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.sobremi_descripcion{
+    margin: auto;
+    max-width: 550px;
+}
+
+.sobremi_descripcion, .sobremi_title{
+    text-align: center;
+}
+
+/* PORTAFOLIO */
+
+.portafolio_title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.portafolio_cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    cursor: pointer;
+    border-radius: .5rem;
+    overflow: hidden;
+    max-width: 350px
+}
+
+.card:hover{
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 3px 13px rgb(0, 0, 0,  .1);
+    transform: scale(1.05);
+}
+
+.card_content{
+    padding: 1rem;
+    text-align: justify;
+}
